@@ -159,7 +159,10 @@ class Application(Frame):
                             c = int(z[x])
                     except:
                             tup1 = tup1 + ([z[x]],)
-                            c=0
+                            c=-1
+                            
+                    if c == 0:
+                    	tup1 = tup1 + ("0",)
                     
                     if c == 1:
                             tup1 = tup1 + (set1,)
